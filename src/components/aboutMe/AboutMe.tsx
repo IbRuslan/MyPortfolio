@@ -43,7 +43,7 @@ export const AboutMe = () => {
     }
 
     return (
-        <div ref={myRef} className={s.back}>
+        <div id={'about'} ref={myRef} className={s.back}>
             <div className={s.container}>
                 <div className={s.main} id ="aboutme">
                     <motion.div

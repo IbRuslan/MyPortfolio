@@ -1,16 +1,16 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import s from "./MySkils.module.css";
-import html from '../../../../img/skills/Html.svg'
-import css from '../../../../img/skills/css3.svg'
-import javascript from '../../../../img/skills/js.svg'
-import typescript from '../../../../img/skills/ts.svg'
-import react from '../../../../img/skills/react.svg'
-import redux from '../../../../img/skills/Redux.svg'
-import storybook from '../../../../img/skills/storybook.svg'
-import mui from '../../../../img/skills/materialui.svg'
-import git from '../../../../img/skills/git.svg'
-import figma from '../../../../img/skills/figma.svg'
+import html from '../../img/skills/Html.svg'
+import css from '../../img/skills/css3.svg'
+import javascript from '../../img/skills/js.svg'
+import typescript from '../../img/skills/ts.svg'
+import react from '../../img/skills/react.svg'
+import redux from '../../img/skills/Redux.svg'
+import storybook from '../../img/skills/storybook.svg'
+import mui from '../../img/skills/materialui.svg'
+import git from '../../img/skills/git.svg'
+import figma from '../../img/skills/figma.svg'
 
 export const MySkills = () => {
 
@@ -27,7 +27,7 @@ export const MySkills = () => {
     }
 
     return (
-        <div className={s.container}>
+        <div id={'skills'} className={s.container}>
             <div className={s.page}>
                 <motion.div
                     initial='hidden'

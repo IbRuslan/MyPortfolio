@@ -1,4 +1,59 @@
+.nav {
+    padding: 20px 0;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: transparent;
+}
 
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
 
+.nav_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
 
+.logo {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scroll_item_link {
+    color: #171515;
+}
+
+.is_active {
+    position: relative;
+}
+
+.is_active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+}
 
