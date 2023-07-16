@@ -63,6 +63,14 @@
     display: block;
     height: 2px;
     width: 100%;
-    background-color: blue;
+    background-color: #5959e0;
 }
 
+@media (max-width: 600px) {
+    .scroll {
+        column-gap: 20px;
+    }
+    .icon {
+        margin-right: 20px;
+    }
+}

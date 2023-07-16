@@ -45,22 +45,23 @@ export const AboutMe = () => {
     return (
         <div id={'about'} ref={myRef} className={s.back}>
             <div className={s.container}>
-                <div className={s.main} id ="aboutme">
                     <motion.div
                         initial='hidden'
                         whileInView='visible'
-                        className={s.aboutme}>
-                        <motion.div custom={1} variants={textAnimation} className={s.description}>
-                            <h1>Hi, I'm Ruslan Ibragimov</h1>
-                            <p>I’m a front-end developer who has a results-focused attitude to creating SPA, using
-                                React(JS/TS), Redux. I would like to find project work and full-time employment in a
-                                company with a modern approach to development and a collaborative team.</p>
-                        </motion.div>
+                        className={s.main}>
                         <motion.div custom={1.5} variants={textAnimation} className={s.avatar}>
                             <img src={ava} alt="ava"/>
                         </motion.div>
+                        <motion.div custom={1} variants={textAnimation} className={s.description}>
+                            <h1>Hi, I'm Ruslan Ibragimov</h1>
+                            <div className={s.text}>
+                                <p>I’m a front-end developer who has a results-focused attitude to creating SPA, using
+                                React(JS/TS), Redux. I would like to find project work and full-time employment in a
+                                company with a modern approach to development and a collaborative team.</p>
+                            </div>
+                            <a href="#!" className={s.btn}>Download CV</a>
+                        </motion.div>
                     </motion.div>
-                </div>
             </div>
         </div>
     );
