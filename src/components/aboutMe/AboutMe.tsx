@@ -53,7 +53,7 @@ export const AboutMe = () => {
                             <img src={ava} alt="ava"/>
                         </motion.div>
                         <motion.div custom={1} variants={textAnimation} className={s.description}>
-                            <h1>Hi, I'm Ruslan Ibragimov</h1>
+                            <h1>Hi, I'm <strong>Ruslan Ibragimov</strong></h1>
                             <div className={s.text}>
                                 <p>I’m a front-end developer who has a results-focused attitude to creating SPA, using
                                 React(JS/TS), Redux. I would like to find project work and full-time employment in a

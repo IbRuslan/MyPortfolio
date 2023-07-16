@@ -1,0 +1,37 @@
+.footer {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.networks {
+    display: flex;
+    justify-content: center;
+}
+
+.network {
+    margin: 0 20px;
+    transition: opacity 0.3s ease;
+}
+
+.network:hover {
+    opacity: 0.7;
+}
+
+.network img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+@media(max-width: 300px) {
+    .network {
+        margin: 0 10px;
+        transition: opacity 0.3s ease;
+    }
+}

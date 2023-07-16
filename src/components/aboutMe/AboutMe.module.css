@@ -27,6 +27,10 @@
     margin-bottom: 20px;
 }
 
+.description strong {
+    color: #5959e0;
+}
+
 .description p {
     font-size: 1.2rem;
     line-height: 30px;
@@ -69,23 +73,4 @@
     top: 1px;
 }
 
-/*!* Media queries for smaller screens *!*/
-/*@media (max-width: 768px) {*/
-/*    .description {*/
-/*        max-width: 100%;*/
-/*        padding-right: 0;*/
-/*    }*/
-
-/*    .avatar {*/
-/*        max-width: 100%;*/
-/*        margin-top: 40px;*/
-/*    }*/
-/*}*/
-
-/*!* Media queries for larger screens *!*/
-/*@media (min-width: 1200px) {*/
-/*    .container {*/
-/*        max-width: 1140px;*/
-/*    }*/
-/*}*/
 
