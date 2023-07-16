@@ -1,9 +1,9 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import s from './Projects.module.css'
-import social from '../../../../img/projects/social.jpg'
-import todolist from '../../../../img/projects/todolist.jpg'
-import shop from '../../../../img/projects/shop.jpg'
+import social from '../../img/projects/social.jpg'
+import todolist from '../../img/projects/todolist.jpg'
+import shop from '../../img/projects/shop.jpg'
 
 export const Projects = () => {
 
