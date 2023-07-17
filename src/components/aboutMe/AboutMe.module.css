@@ -3,6 +3,12 @@
     max-width: 100%;
 }
 
+.wrapper {
+    position: absolute;
+    max-width: 100%;
+    z-index: -999;
+}
+
 .container {
     position: relative;
     margin: 0 auto;
