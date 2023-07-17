@@ -73,7 +73,7 @@
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 630px) {
     .skill_body {
         grid-gap: 10px;
         display: grid;
@@ -82,9 +82,12 @@
         text-align: center;
         justify-content: center;
     }
+    .skill_title {
+        font-size: 40px
+    }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 380px) {
     .skill_body {
         grid-gap: 15px;
         display: grid;
@@ -92,5 +95,16 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+    .skill_title {
+        font-size: 30px
+    }
+    .icon {
+        max-width: 80px;
+        max-height: 100px;
+        padding: 10px;
+    }
+    .icon img {
+        max-width: 40px
     }
 }

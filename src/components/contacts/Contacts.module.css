@@ -124,6 +124,9 @@ textarea.contacts_form_input {
     .form {
         margin-top: 50px
     }
+    .contacts_title {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -132,5 +135,8 @@ textarea.contacts_form_input {
         position: relative;
         max-width: 200px;
         row-gap: 2rem;
+    }
+    .contacts_title {
+        font-size: 30px;
     }
 }
