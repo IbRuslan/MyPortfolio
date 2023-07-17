@@ -11,11 +11,29 @@ import storybook from '../../img/skills/storybook.svg'
 import mui from '../../img/skills/materialui.svg'
 import git from '../../img/skills/git.svg'
 import figma from '../../img/skills/figma.svg'
+import unittest from '../../img/skills/unittest.svg'
+import rest from '../../img/skills/api.svg'
+import MySkill from "./MySkill/MySkill";
 
 export const MySkills = () => {
 
+    const mySkills = [
+        {id: 1, title: 'HTML5', urlImage: html},
+        {id: 1.1, title: 'CSS', urlImage: css},
+        {id: 1.2, title: 'JS', urlImage: javascript},
+        {id: 1.3, title: 'TS', urlImage: typescript},
+        {id: 1.4, title: 'REACT', urlImage: react},
+        {id: 1.5, title: 'REDUX', urlImage: redux},
+        {id: 1.6, title: 'UnitTest', urlImage: unittest},
+        {id: 1.7, title: 'RestApi', urlImage: rest},
+        {id: 1.8, title: 'STORYBOOK', urlImage: storybook},
+        {id: 1.9, title: 'MUI', urlImage: mui},
+        {id: 2, title: 'GIT', urlImage: git},
+        {id: 2.1, title: 'FIGMA', urlImage: figma}
+    ]
+
     const mySkillsAnimation = {
-        hidden:{
+        hidden: {
             y: 100,
             opacity: 0,
         },
@@ -27,56 +45,23 @@ export const MySkills = () => {
     }
 
     return (
-        <div id={'skills'} className={s.container}>
+        <div className={s.container} id={'skills'}>
             <div className={s.page}>
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    viewport={{ amount: 0.2}}
-                    className={s.skill} id='skills'>
-                    <motion.h2 custom={1} variants={mySkillsAnimation}  className={s.skill_title}>My skills</motion.h2>
+                    viewport={{amount: 0.2}}
+                    className={s.skill}>
+                    <motion.h2 custom={1} variants={mySkillsAnimation} className={s.skill_title}>My skills
+                    </motion.h2>
                     <div className={s.skills_body}>
                         <div className={s.skill_body}>
-                            <motion.div variants={mySkillsAnimation} custom={1} className={s.paper}>
-                                <div className={s.icon}><img src={html} alt="html"/></div>
-                                <h3>HTML5</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.1} className={s.paper}>
-                                <div className={s.icon}><img src={css} alt="css"/></div>
-                                <h3>CSS</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.2} className={s.paper}>
-                                <div className={s.icon}><img src={javascript} alt="js"/></div>
-                                <h3>JS</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.3} className={s.paper}>
-                                <div className={s.icon}><img src={typescript} alt="ts"/></div>
-                                <h3>TS</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.4} className={s.paper}>
-                                <div className={s.icon}><img src={react} alt="react"/></div>
-                                <h3>REACT</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.5} className={s.paper}>
-                                <div className={s.icon}><img src={redux} alt="redux"/></div>
-                                <h3>REDUX</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.6} className={s.paper}>
-                                <div className={s.icon}><img src={storybook} alt="storybook"/></div>
-                                <h3>STORYBOOK</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.7} className={s.paper}>
-                                <div className={s.icon}><img src={mui} alt="mui"/></div>
-                                <h3>MUI</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.8} className={s.paper}>
-                                <div className={s.icon}><img src={git} alt="git"/></div>
-                                <h3>GIT</h3>
-                            </motion.div>
-                            <motion.div variants={mySkillsAnimation} custom={1.9} className={s.paper}>
-                                <div className={s.icon}><img src={figma} alt="figma"/></div>
-                                <h3>FIGMA</h3>
-                            </motion.div>
+                            {
+                                mySkills.map(s => <MySkill key={s.id} title={s.title}
+                                                           urlImage={s.urlImage} custom={s.id}
+                                                           variants={mySkillsAnimation}/>
+                                )
+                            }
                         </div>
                     </div>
                 </motion.div>

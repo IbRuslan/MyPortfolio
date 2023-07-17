@@ -1,3 +1,7 @@
+.skills {
+    /*margin-bottom: 150px;*/
+}
+
 .container {
     margin: 0 auto;
     max-width: 1080px;
@@ -5,7 +9,8 @@
 }
 
 .page {
-    margin-top: 50px;
+    margin-top: 80px;
+    border-top: 1px solid #fcfcfc;
 }
 
 .skill_title {
@@ -32,17 +37,17 @@
 .icon {
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 120px;
+    max-width: 100px;
+    max-height: 120px;
     background-color: #e0d9e7;
     margin: auto;
-    padding: 2px;
+    padding: 20px;
     border-radius: 3rem;
 }
 
 .icon img {
     margin: auto;
-    width: 50px;
+    max-width: 50px;
     height: 60px;
 }
 
@@ -65,5 +70,27 @@
     }
     80%{
         transform: translate(0);
+    }
+}
+
+@media(max-width: 700px) {
+    .skill_body {
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 450px) {
+    .skill_body {
+        grid-gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 }

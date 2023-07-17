@@ -13,11 +13,11 @@ export const ProjectsList = () => {
 
     const projectsItem = [
         {id: 1, title: 'Social network', urlImage: social, urlGitRage: 'https://www.google.com/'},
-        {id: 2, title: 'TodoList', urlImage: todolist, urlGitRage: 'https://www.google.com/'},
-        {id: 3, title: 'Shop', urlImage: shop, urlGitRage: 'https://www.google.com/'},
-        {id: 4, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://www.google.com/'},
-        {id: 5, title: 'Counter', urlImage: counter, urlGitRage: 'https://www.google.com/'},
-        {id: 6, title: 'Questionnaire', urlImage: opros, urlGitRage: 'https://www.google.com/'}
+        {id: 1.1, title: 'TodoList', urlImage: todolist, urlGitRage: 'https://www.google.com/'},
+        {id: 1.2, title: 'Shop', urlImage: shop, urlGitRage: 'https://www.google.com/'},
+        {id: 1.3, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://www.google.com/'},
+        {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://www.google.com/'},
+        {id: 1.5, title: 'Questionnaire', urlImage: opros, urlGitRage: 'https://www.google.com/'}
     ]
 
     const myProjectsAnimation = {
@@ -33,8 +33,8 @@ export const ProjectsList = () => {
     }
 
     return (
-        <div id={"projects"} className={s.container}>
-            <div className={s.projects} id="projects">
+        <div id="projects" className={s.container}>
+            <div className={s.projects}>
                 <h2 className={s.title}>My Projects</h2>
                 <motion.div
                     initial='hidden'
@@ -46,7 +46,7 @@ export const ProjectsList = () => {
                                                        title={p.title}
                                                        urlImage={p.urlImage}
                                                        urlGitRage={p.urlGitRage}
-                                                       custom={1}
+                                                       custom={p.id}
                                                        variants={myProjectsAnimation}/>)
                     }
                 </motion.div>
