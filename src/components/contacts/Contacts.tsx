@@ -24,7 +24,7 @@ export const Contacts = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{ amount: 0.2}}
+                viewport={{amount: 0.2}}
                 className={s.contacts} id='contacts'>
                 <motion.h3 className={s.contacts_title}>Contact me</motion.h3>
                 <div className={s.contacts_body}>
@@ -44,23 +44,19 @@ export const Contacts = () => {
                     </motion.div>
                     <motion.div custom={1.5} variants={myContactsAnimation} className={s.contacts_form}>
                         <div className={s.form}>
-                            <div className={s.form_box}>
-                                <label>Name</label>
-                                <input type="text" name="user_name" className={s.contacts_form_input}
-                                        placeholder="Write your name"
-                                />
-                            </div>
-                            <div className={s.form_box}>
-                                <label>Mail</label>
-                                <input type="text" name="user_name" className={s.contacts_form_input}
-                                       placeholder="Write your email"
-                                />
-                            </div>
-                            <div className={s.form_box}>
-                                <label>Message</label>
-                                <textarea name="user_name" className={`${s.contacts_form_input} ${s.form_box}`}
-                                       placeholder=""
-                                />
+                            <div className={s.form_container}>
+                            <label>Name</label>
+                            <input type="text" name="user_name" className={s.contacts_form_input}
+                                   placeholder="Write your name"
+                            />
+                            <label>Mail</label>
+                            <input type="text" name="user_name" className={s.contacts_form_input}
+                                   placeholder="Write your email"
+                            />
+                            <label>Message</label>
+                            <textarea name="user_name" className={`${s.contacts_form_input} ${s.form_box}`}
+                                      placeholder=""
+                            />
                             </div>
                             <button className={s.contacts_button}>
                                 Submit

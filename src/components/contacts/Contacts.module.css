@@ -51,7 +51,7 @@
     row-gap: 2rem;
 }
 
-.form_box {
+.form_container {
     display: flex;
     flex-direction: column;
 }
