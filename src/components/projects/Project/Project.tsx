@@ -10,7 +10,7 @@ export type HiddenType = {
 export type VisibleType = {
     y: number
     opacity: number
-    transition: {delay: number}
+    transition: { delay: number }
 }
 
 export type MyProjectsAnimationType = {
@@ -31,6 +31,11 @@ export const Project = (props: ProjectType) => {
         <motion.div custom={props.custom} variants={props.variants} className={s.project}>
             <div className={s.project_img}>
                 <a href={props.urlGitRage} target={"_blank"}><img src={props.urlImage} alt={props.title}/></a>
+                <a href={props.urlGitRage} target={"_blank"}>
+                    <div className={s.overlay}>
+                        <span>view</span>
+                    </div>
+                </a>
             </div>
             <h3 className={s.project_title}>{props.title}</h3>
         </motion.div>
