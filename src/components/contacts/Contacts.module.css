@@ -1,12 +1,14 @@
 .container {
+    position: relative;
     margin: 0 auto;
-    max-width: 1080px;
-    padding: 0 40px
+    padding: 0 15px;
+    max-width: 1200px;
 }
 
 .contacts {
     margin: 50px 0 100px 0;
     border-top: 1px solid #bdb5c8;
+    padding: 20px;
 }
 
 .contacts img {
@@ -18,6 +20,8 @@
     font-weight: 700;
     line-height: 75px;
     text-align: center;
+    color:#5959e0;
+    margin: 60px auto;
 }
 
 .contacts_body {
@@ -30,10 +34,15 @@
 .contacts_info {
     display: grid;
     row-gap: 2rem;
+    margin-top: 10px;
 }
 
 .contacts_data {
     display: grid;
+}
+
+.icon {
+    margin: 0 5px 5px 0;
 }
 
 .form{
@@ -48,7 +57,7 @@
 }
 
 .contacts_form_input {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 10px;
@@ -65,7 +74,7 @@
 }
 
 .contacts_button {
-    background-color: #bdb5c8;
+    background-color: #5959e0;
     color: white;
     font-size: 16px;
     border: none;
@@ -76,10 +85,52 @@
 }
 
 .contacts_button:hover {
-    background-color: #9990a6;
+    opacity: 0.9;
+}
+
+.contacts_button:active {
+    position: relative;
+    top: 1px;
 }
 
 textarea.contacts_form_input {
     height: 150px;
     resize: none;
+}
+
+@media (max-width: 900px) {
+    .form{
+        position: relative;
+        max-width: 400px;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .form{
+        position: relative;
+        max-width: 300px;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .contacts_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px 0 20px;
+    }
+    .form {
+        margin-top: 50px
+    }
+}
+
+@media (max-width: 380px) {
+    .form{
+        margin-top: 50px    ;
+        position: relative;
+        max-width: 200px;
+        row-gap: 2rem;
+    }
 }

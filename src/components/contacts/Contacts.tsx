@@ -1,8 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import s from './Contacts.module.css'
-import email from '../../../../img/mail.svg'
-import phone from '../../../../img/phone.svg'
+import email from '../../img/mail.svg'
+import phone from '../../img/phone.svg'
 
 export const Contacts = () => {
 
@@ -31,13 +31,13 @@ export const Contacts = () => {
                     <motion.div custom={1} variants={myContactsAnimation} className={s.contacts_info}>
                         <div className={s.contacts_data}>
                             <div>
-                                <img src={email} alt="mail"/><span>Email</span>
+                                <img src={email} alt="mail" className={s.icon}/><span>Email</span>
                             </div>
                             <span>ribragimov2003@gmail.com</span>
                         </div>
                         <div className={s.contacts_data}>
-                            <div>
-                                <img src={phone} alt="call"/><span>Number</span>
+                            <div className={s.icon}>
+                                <img src={phone} alt="call" className={s.icon}/><span>Number</span>
                             </div>
                             <span>+998914012901</span>
                         </div>
