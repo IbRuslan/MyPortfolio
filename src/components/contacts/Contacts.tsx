@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import s from './Contacts.module.css'
 import email from '../../img/mail.svg'
 import phone from '../../img/phone.svg'
-import { useForm, ValidationError } from '@formspree/react';
+import {useForm} from '@formspree/react';
 
 export const Contacts = () => {
     const [user_name, setName] = useState('');
@@ -83,18 +83,21 @@ export const Contacts = () => {
                     <motion.div custom={1.5} variants={myContactsAnimation} className={s.contacts_form}>
                         <form className={s.form} onSubmit={onSubmit}>
                             <div className={s.form_container}>
-                            <label>Name</label>
-                            <input value={user_name} onChange={onChangeNameHandler} id="name" type="text" name="name" required className={s.contacts_form_input}
-                                   placeholder="Write your name"
-                            />
-                            <label>Mail</label>
-                            <input value={user_email} onChange={onChangeEmailHandler} id="email" type="email" name="email" required className={s.contacts_form_input}
-                                   placeholder="Write your email"
-                            />
-                            <label>Message</label>
-                            <textarea value={message} onChange={onChangeMessageHandler} id="message" name="message" required className={`${s.contacts_form_input} ${s.form_box}`}
-                                      placeholder=""
-                            />
+                                <label>Name</label>
+                                <input value={user_name} onChange={onChangeNameHandler} id="name" type="text"
+                                       name="name" required className={s.contacts_form_input}
+                                       placeholder="Write your name"
+                                />
+                                <label>Mail</label>
+                                <input value={user_email} onChange={onChangeEmailHandler} id="email" type="email"
+                                       name="email" required className={s.contacts_form_input}
+                                       placeholder="Write your email"
+                                />
+                                <label>Message</label>
+                                <textarea value={message} onChange={onChangeMessageHandler} id="message" name="message"
+                                          required className={`${s.contacts_form_input} ${s.form_box}`}
+                                          placeholder=""
+                                />
                             </div>
                             {showSuccessMessage &&
                                 <div className="success-message">

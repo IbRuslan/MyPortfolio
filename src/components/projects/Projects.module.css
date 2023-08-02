@@ -37,6 +37,7 @@
     margin-bottom: 50px;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 
@@ -52,6 +53,7 @@
     width: 350px;
     height: 250px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .project_img:hover img {
@@ -65,7 +67,8 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #81d2e7;
+    /*background-color: #81d2e7;*/
+    background-color: #5959e0;
     transition: opacity 0.5s;
     display: flex;
     justify-content: center;
