@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import s from './AboutMe.module.css'
 
 import ava from '../../img/ava.jpg'
+import ava1 from '../../img/rosha.jpg'
 import {PracticlesWrapper} from "./PracticlesWrapper";
 
 export const AboutMe = () => {
@@ -29,7 +30,7 @@ export const AboutMe = () => {
                     whileInView='visible'
                     className={s.main}>
                     <motion.div custom={1.5} variants={textAnimation} className={s.avatar}>
-                        <img src={ava} alt="ava"/>
+                        <img src={ava1} alt="ava"/>
                     </motion.div>
                     <motion.div custom={1} variants={textAnimation} className={s.description}>
                         <h1>Hi, I'm <strong>Ruslan Ibragimov</strong></h1>
@@ -38,7 +39,7 @@ export const AboutMe = () => {
                                 React(JS/TS), Redux. I would like to find project work and full-time employment in a
                                 company with a modern approach to development and a collaborative team.</p>
                         </div>
-                        <a href="#!" className={s.btn}>Download CV</a>
+                        <a href="https://drive.google.com/file/d/1O0MCeiO_m78_i4folzb4qW5GEmA8rhMd/view?usp=sharing" target="_blank" className={s.btn}>Download CV</a>
                     </motion.div>
                 </motion.div>
             </div>
