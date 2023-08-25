@@ -16,7 +16,7 @@ export const ProjectsList = () => {
         {id: 1.1, title: 'TodoList', urlImage: todolist, urlGitRage: 'https://github.com/IbRuslan/TodoList'},
         {id: 1.3, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://github.com/IbRuslan/myGame'},
         {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://github.com/IbRuslan/Counter'},
-        {id: 1.5, title: 'Slider', urlImage: opros, urlGitRage: 'https://github.com/IbRuslan/ReactSlider'}
+        {id: 1.5, title: 'Slider', urlImage: opros, urlGitRage: 'https://github.com/IbRuslan/horizontalScroll'}
     ]
 
     const myProjectsAnimation = {
