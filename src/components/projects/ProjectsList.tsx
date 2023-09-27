@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import s from './Projects.module.css'
 import social from '../../img/projects/network.jpg'
 import todolist from '../../img/projects/todolist.jpg'
-import shop from '../../img/projects/shop.jpg'
+import pizza from '../../img/projects/pizza.png'
 import game from '../../img/projects/game.jpg'
 import slider from '../../img/projects/slider.jpg'
 import counter from '../../img/projects/counter.jpg'
@@ -14,6 +14,7 @@ export const ProjectsList = () => {
     const projectsItem = [
         {id: 1, title: 'Social network', urlImage: social, urlGitRage: 'https://github.com/IbRuslan/social-network'},
         {id: 1.1, title: 'TodoList', urlImage: todolist, urlGitRage: 'https://github.com/IbRuslan/TodoList'},
+        {id: 1.2, title: 'Lite Pizza', urlImage: pizza, urlGitRage: 'https://github.com/IbRuslan/LitePizza'},
         {id: 1.3, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://github.com/IbRuslan/myGame'},
         {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://github.com/IbRuslan/Counter'},
         {id: 1.5, title: 'Slider', urlImage: slider, urlGitRage: 'https://github.com/IbRuslan/horizontalScroll'}
