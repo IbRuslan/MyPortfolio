@@ -39,7 +39,7 @@ export const AboutMe = () => {
                                 React(JS/TS), Redux. I would like to find project work and full-time employment in a
                                 company with a modern approach to development and a collaborative team.</p>
                         </div>
-                        <a href="https://drive.google.com/file/d/1O0MCeiO_m78_i4folzb4qW5GEmA8rhMd/view?usp=sharing" target="_blank" className={s.btn}>Download CV</a>
+                        <a href="https://drive.google.com/file/d/1xXwFOocsGoUkcQOboa-v7PmIqhq3k8vc/view?usp=drive_link" target="_blank" className={s.btn}>Download CV</a>
                     </motion.div>
                 </motion.div>
             </div>
