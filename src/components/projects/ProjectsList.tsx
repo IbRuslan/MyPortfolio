@@ -12,11 +12,11 @@ import {Project} from "./Project/Project";
 export const ProjectsList = () => {
 
     const projectsItem = [
-        {id: 1, title: 'Social network', urlImage: social, urlGitRage: 'https://github.com/IbRuslan/social-network'},
-        {id: 1.1, title: 'TodoList', urlImage: todolist, urlGitRage: 'https://github.com/IbRuslan/TodoList'},
-        {id: 1.2, title: 'Lite Pizza', urlImage: pizza, urlGitRage: 'https://github.com/IbRuslan/LitePizza'},
+        {id: 1, title: 'ListMaster', urlImage: todolist, urlGitRage: 'https://ibruslan.github.io/ListMaster'},
+        {id: 1.1, title: 'Lite Pizza', urlImage: pizza, urlGitRage: 'https://ibruslan.github.io/LitePizza/'},
+        {id: 1.2, title: 'Social network', urlImage: social, urlGitRage: 'https://github.com/IbRuslan/social-network'},
         {id: 1.3, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://github.com/IbRuslan/myGame'},
-        {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://github.com/IbRuslan/Counter'},
+        {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://ibruslan.github.io/Counter/'},
         {id: 1.5, title: 'Slider', urlImage: slider, urlGitRage: 'https://github.com/IbRuslan/horizontalScroll'}
     ]
 
