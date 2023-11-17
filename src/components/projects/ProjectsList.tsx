@@ -5,7 +5,7 @@ import social from '../../img/projects/network.jpg'
 import todolist from '../../img/projects/todolist.jpg'
 import pizza from '../../img/projects/pizza.png'
 import game from '../../img/projects/game.jpg'
-import slider from '../../img/projects/slider.jpg'
+import accommodo from '../../img/projects/accommodo.avif'
 import counter from '../../img/projects/counter.jpg'
 import {Project} from "./Project/Project";
 
@@ -16,8 +16,8 @@ export const ProjectsList = () => {
         {id: 1.1, title: 'Lite Pizza', urlImage: pizza, urlGitRage: 'https://ibruslan.github.io/LitePizza/'},
         {id: 1.2, title: 'Social network', urlImage: social, urlGitRage: 'https://github.com/IbRuslan/social-network'},
         {id: 1.3, title: 'SimpleGame', urlImage: game, urlGitRage: 'https://github.com/IbRuslan/myGame'},
-        {id: 1.4, title: 'Counter', urlImage: counter, urlGitRage: 'https://ibruslan.github.io/Counter/'},
-        {id: 1.5, title: 'Slider', urlImage: slider, urlGitRage: 'https://github.com/IbRuslan/horizontalScroll'}
+        {id: 1.4, title: 'Accommodo', urlImage: accommodo, urlGitRage: 'https://expectation-uxty.vercel.app/'},
+        {id: 1.5, title: 'Counter', urlImage: counter, urlGitRage: 'https://ibruslan.github.io/Counter/'}
     ]
 
     const myProjectsAnimation = {
