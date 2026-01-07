@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import s from './AboutMe.module.css'
 
 import ava from '../../img/ava.jpg'
-import ava1 from '../../img/rosha.jpg'
+import ava1 from '../../img/new-rosha.jpg'
 import {PracticlesWrapper} from "./PracticlesWrapper";
 
 export const AboutMe = () => {
